@@ -1,0 +1,106 @@
+﻿@model HRMEFentity.Entity.User
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style type=text/css>
+        body {
+            font-size: 12px;
+            color: #ffffff;
+            font-family: 宋体;
+        }
+
+        td {
+            font-size: 12px;
+            color: #ffffff;
+            font-family: 宋体;
+        }
+    </style>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script type="text/javascript" src="~/javascript/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="~/javascript/jquery.messager.js"></script>
+    <script type="text/javascript" src="~/javascript/login.js"></script>
+</head>
+<body>
+    @using (Ajax.BeginForm("Login", "Useres", new AjaxOptions() { HttpMethod = "Post" }))
+    {
+        <div>
+            <table cellspacing=0 cellpadding=0 width=900 align=center border=0>
+                <tbody>
+                    <tr>
+                        <td style="height: 105px">
+                            <img src="~/images/login_11.gif" border=0>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td background=~/images/login_22.jpg height=300>
+                            <table height=300 cellpadding=0 width=900 border=0>
+                                <tbody>
+                                    <tr>
+                                        <td colspan=2 height=35></td>
+                                    </tr>
+                                    <tr>
+                                        <td width=360></td>
+                                        <td>
+                                            <table cellspacing=0 cellpadding=2 border=0>
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="height: 28px" width=80>
+                                                            登 录 名：
+                                                        </td>
+                                                        <td style="height: 28px" width=150>
+                                                            @*<input id="userName" style="width: 130px" />*@
+                                                            @Html.EditorFor(model => model.u_name, new { htmlAttributes = new { @style = "width: 150px" } })
+                                                            @Html.ValidationMessageFor(model => model.u_name, "", new { @class = "text-danger" })
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="height: 28px">
+                                                            登录密码：
+                                                        </td>
+                                                        <td style="height: 28px">
+                                                            @*<input id="userPassword" style="width: 130px" type="password" />*@
+                                                            @Html.EditorFor(model => model.u_password, new { htmlAttributes = new { @style = "width: 150px", type = "password" } })
+                                                            @Html.ValidationMessageFor(model => model.u_password, "", new { @class = "text-danger" })
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td style="height: 18px"></td>
+                                                        <td style="height: 18px"></td>
+                                                        <td style="height: 18px"></td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>
+                                                            <input type="submit" value="登录" style="cursor: pointer;" />
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="~/images/login_33.jpg" border=0>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    }
+</body>
+</html>
