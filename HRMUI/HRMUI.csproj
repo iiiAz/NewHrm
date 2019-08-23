@@ -172,6 +172,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\iCharController.cs" />
     <Compile Include="Controllers\UseresController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -758,6 +759,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\vue.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -770,14 +772,16 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Unity.config" />
     <Content Include="Views\Useres\Index.cshtml" />
     <Content Include="Views\Useres\TestLogin.cshtml" />
+    <Content Include="Views\Home\MainIndex.cshtml" />
+    <Content Include="Views\iChar\Index.cshtml" />
+    <Content Include="Views\iChar\Create.cshtml" />
+    <Content Include="Views\iChar\SelectBy.cshtml" />
+    <Content Include="Views\iChar\CreateAboutPay.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -794,6 +798,10 @@
     <ProjectReference Include="..\HRMBLL\HRMBLL.csproj">
       <Project>{9252a15b-e218-4291-beab-2c5be3793911}</Project>
       <Name>HRMBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HRMEFentity\HRMEFentity.csproj">
+      <Project>{6f6aeac5-0395-46d1-ad29-4815e987de1e}</Project>
+      <Name>HRMEFentity</Name>
     </ProjectReference>
     <ProjectReference Include="..\HRMIOC\HRMIOC.csproj">
       <Project>{98664997-3700-490c-8dfb-6c84bf6b4130}</Project>

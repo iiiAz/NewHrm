@@ -19,9 +19,11 @@ namespace HRMEFentity.MyContext
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Configurations.AddFromAssembly(Assembly.GetExecutingAssembly());
+            modelBuilder.Configurations.
+                AddFromAssembly(Assembly.GetExecutingAssembly());
         }
         public DbSet<Car> Cares { set; get; }
         public DbSet<User> Useres { set; get; }
+        public DbSet<config_public_char> Chars { get; set; }
     }
 }
