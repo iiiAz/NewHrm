@@ -10,6 +10,7 @@ namespace HRMUI.Controllers
     {
         public ActionResult MainIndex()
         {
+
             return View();
         }
 

@@ -171,11 +171,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Controllers\config_majorController.cs" />
-    <Compile Include="Controllers\config_major_kindController.cs" />
-    <Compile Include="Controllers\config_public_charController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\iCharController.cs" />
     <Compile Include="Controllers\UseresController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -614,7 +610,6 @@
     <Content Include="javascript\tree\event.js" />
     <Content Include="javascript\tree\tree.css" />
     <Content Include="javascript\user_add.js" />
-    <Content Include="Scripts\vue.js" />
     <Content Include="javascript\winopen\winopen.js" />
     <Content Include="javascript\winopen\winopenm.js" />
     <Content Include="javascript\winopen\winopenn.js" />
@@ -781,6 +776,24 @@
     <Content Include="Unity.config" />
     <Content Include="Views\Useres\Index.cshtml" />
     <Content Include="Views\Useres\TestLogin.cshtml" />
+    <Content Include="Views\Car\Index.cshtml" />
+    <Content Include="Views\OneLevel\Index.cshtml" />
+    <Content Include="Views\OneLevel\Edit.cshtml" />
+    <Content Include="Views\OneLevel\OneLevel_Change_success.cshtml" />
+    <Content Include="Views\OneLevel\Create.cshtml" />
+    <Content Include="Views\OneLevel\OneLevel_Create_success.cshtml" />
+    <Content Include="Views\OneLevel\OneLevel_Del_success.cshtml" />
+    <Content Include="Views\TwoLevel\Index.cshtml" />
+    <Content Include="Views\TwoLevel\TwoLevel_Del_success.cshtml" />
+    <Content Include="Views\TwoLevel\Create.cshtml" />
+    <Content Include="Views\TwoLevel\TwoLevel_Create_success.cshtml" />
+    <Content Include="Views\TwoLevel\Edit.cshtml" />
+    <Content Include="Views\TwoLevel\TwoLevel_Change_success.cshtml" />
+    <Content Include="Views\ThreeLevel\Index.cshtml" />
+    <Content Include="Views\ThreeLevel\Edit.cshtml" />
+    <Content Include="Views\ThreeLevel\ThreeLevel_Change_success.cshtml" />
+    <Content Include="Views\ThreeLevel\Create.cshtml" />
+    <Content Include="Views\ThreeLevel\ThreeLevel_Create_success.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
