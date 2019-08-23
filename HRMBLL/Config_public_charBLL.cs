@@ -4,33 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HRMIOC;
-using IHRMDAO;
 using HRMModel;
+using IHRMDAO;
 using IHRMBLL;
 namespace HRMBLL
 {
-    public class Config_public_charBLL : IConfig_public_charBLL
+    public class config_public_charBLL : Iconfig_public_charBLL
     {
-        IConfig_public_charDAO icpd = IocContanier.CreateChar_DAO();
-
-        public int Add(config_public_charModel c)
-        {
-            return icpd.Add(c);
-        }
-
+        Iconfig_public_charDAO IOC = IocContanier.Createconfig_public_charDAO();
         public int Delete(config_public_charModel c)
         {
-            return icpd.Delete(c);
+            return IOC.Delete(c) ;
         }
 
         public List<config_public_charModel> QueryAll()
         {
-            return icpd.QueryAll();
-        }
-
-        public List<config_public_charModel> SelectByx(config_public_charModel cpc)
-        {
-            return icpd.SelectByx(cpc);
+            return IOC.QueryAll();
         }
     }
 }

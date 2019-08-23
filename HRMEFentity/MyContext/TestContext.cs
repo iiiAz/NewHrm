@@ -24,6 +24,6 @@ namespace HRMEFentity.MyContext
         }
         public DbSet<Car> Cares { set; get; }
         public DbSet<User> Useres { set; get; }
-        public DbSet<config_public_char> Chars { get; set; }
     }
 }
+ 

@@ -17,7 +17,7 @@ namespace HRMIOC
         {
             UnityContainer ioc = new UnityContainer();
             ExeConfigurationFileMap ecfm = new ExeConfigurationFileMap();
-            ecfm.ExeConfigFilename = @"D:\Git\Mess\newHRM\Hrm\HRMUI\Unity.config";
+            ecfm.ExeConfigFilename = @"D:\MVC_VUE_EF\Hrm\HRMUI\Unity.config";
             Configuration cf = ConfigurationManager.OpenMappedExeConfiguration(ecfm, ConfigurationUserLevel.None);
             UnityConfigurationSection ucs = (UnityConfigurationSection)cf.GetSection("unity");
             ioc.LoadConfiguration(ucs, XmlName);
@@ -47,19 +47,6 @@ namespace HRMIOC
         {
             UnityContainer ioc = CreatIoc("confBLL");
             return ioc.Resolve<IUserBLL>("UserBLL");
-        }
-
-
-        /*****/
-        public static IConfig_public_charDAO CreateChar_DAO()
-        {
-            UnityContainer ioc = CreatIoc("confDAL");
-            return ioc.Resolve<Config_public_charDAO>("Config_public_charDAO");
-        }
-        public static IConfig_public_charBLL CreateChar_BLL()
-        {
-            UnityContainer ioc = CreatIoc("confBLL");
-            return ioc.Resolve<IConfig_public_charBLL>("Config_public_charBLL");
         }
     }
 }

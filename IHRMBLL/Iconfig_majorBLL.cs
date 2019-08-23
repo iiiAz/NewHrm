@@ -7,9 +7,11 @@ using System.Threading.Tasks;
 
 namespace IHRMBLL
 {
-   public interface Iconfig_public_charBLL
+   public interface Iconfig_majorBLL
     {
-        List<config_public_charModel> QueryAll();
-        int Delete(config_public_charModel c);
+        List<config_majorModel> QueALL();
+        int Delete(config_majorModel m);
+        int Add(config_majorModel m);
+
     }
 }
