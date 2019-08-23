@@ -50,8 +50,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config\CarConfig.cs" />
+    <Compile Include="Config\OneLevelConfig.cs" />
+    <Compile Include="Config\TwoLevelConfig.cs" />
     <Compile Include="Config\UserConfig.cs" />
     <Compile Include="Entity\Car.cs" />
+    <Compile Include="Entity\OneLevel.cs" />
+    <Compile Include="Entity\ThreeLevel.cs" />
+    <Compile Include="Entity\TwoLevel.cs" />
     <Compile Include="Entity\User.cs" />
     <Compile Include="MyContext\TestContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

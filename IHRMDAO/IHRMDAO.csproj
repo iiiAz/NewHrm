@@ -41,6 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ICarDAO.cs" />
+    <Compile Include="IOneLevelDao.cs" />
+    <Compile Include="IThreeLevelDao.cs" />
+    <Compile Include="ITwoLevelDao.cs" />
     <Compile Include="IUserDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

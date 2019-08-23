@@ -16,8 +16,29 @@ namespace HRMUI
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Useres", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "OneLevel", action = "Index", id = UrlParameter.Optional }
             );
         }
+        public static void TwoLevelRoutes(RouteCollection routes)
+        {
+            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+
+            routes.MapRoute(
+                name: "Default",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "TwoLevel", action = "Index", id = UrlParameter.Optional }
+            );
+        }
+        /*
+        public static void CarRoutes(RouteCollection routes)
+        {
+            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            routes.MapRoute(
+                name: "Default",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Car", action = "ShowCar", id = UrlParameter.Optional }
+            );
+        }*/
+
     }
 }

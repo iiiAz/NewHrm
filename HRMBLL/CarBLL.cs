@@ -28,7 +28,6 @@ namespace HRMBLL
             return icd.QueryAll();
         }
 
-
         public int Update(CarModel c)
         {
             return icd.Update(c);

@@ -171,7 +171,11 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\CarController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OneLevelController.cs" />
+    <Compile Include="Controllers\ThreeLevelController.cs" />
+    <Compile Include="Controllers\TwoLevelController.cs" />
     <Compile Include="Controllers\UseresController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -610,6 +614,7 @@
     <Content Include="javascript\tree\event.js" />
     <Content Include="javascript\tree\tree.css" />
     <Content Include="javascript\user_add.js" />
+    <Content Include="javascript\vue.js" />
     <Content Include="javascript\winopen\winopen.js" />
     <Content Include="javascript\winopen\winopenm.js" />
     <Content Include="javascript\winopen\winopenn.js" />
@@ -778,6 +783,24 @@
     <Content Include="Unity.config" />
     <Content Include="Views\Useres\Index.cshtml" />
     <Content Include="Views\Useres\TestLogin.cshtml" />
+    <Content Include="Views\Car\Index.cshtml" />
+    <Content Include="Views\OneLevel\Index.cshtml" />
+    <Content Include="Views\OneLevel\Edit.cshtml" />
+    <Content Include="Views\OneLevel\OneLevel_Change_success.cshtml" />
+    <Content Include="Views\OneLevel\Create.cshtml" />
+    <Content Include="Views\OneLevel\OneLevel_Create_success.cshtml" />
+    <Content Include="Views\OneLevel\OneLevel_Del_success.cshtml" />
+    <Content Include="Views\TwoLevel\Index.cshtml" />
+    <Content Include="Views\TwoLevel\TwoLevel_Del_success.cshtml" />
+    <Content Include="Views\TwoLevel\Create.cshtml" />
+    <Content Include="Views\TwoLevel\TwoLevel_Create_success.cshtml" />
+    <Content Include="Views\TwoLevel\Edit.cshtml" />
+    <Content Include="Views\TwoLevel\TwoLevel_Change_success.cshtml" />
+    <Content Include="Views\ThreeLevel\Index.cshtml" />
+    <Content Include="Views\ThreeLevel\Edit.cshtml" />
+    <Content Include="Views\ThreeLevel\ThreeLevel_Change_success.cshtml" />
+    <Content Include="Views\ThreeLevel\Create.cshtml" />
+    <Content Include="Views\ThreeLevel\ThreeLevel_Create_success.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -794,6 +817,10 @@
     <ProjectReference Include="..\HRMBLL\HRMBLL.csproj">
       <Project>{9252a15b-e218-4291-beab-2c5be3793911}</Project>
       <Name>HRMBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HRMEFentity\HRMEFentity.csproj">
+      <Project>{6f6aeac5-0395-46d1-ad29-4815e987de1e}</Project>
+      <Name>HRMEFentity</Name>
     </ProjectReference>
     <ProjectReference Include="..\HRMIOC\HRMIOC.csproj">
       <Project>{98664997-3700-490c-8dfb-6c84bf6b4130}</Project>

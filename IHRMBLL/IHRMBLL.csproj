@@ -41,6 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ICarBLL.cs" />
+    <Compile Include="IThreeLevelBLL.cs" />
+    <Compile Include="IOneLevelBLL.cs" />
+    <Compile Include="ITwoLevelBLL.cs" />
     <Compile Include="IUserBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
