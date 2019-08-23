@@ -49,9 +49,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Config\config_majorConfig.cs" />
+    <Compile Include="Config\config_major_kindConfig.cs" />
+    <Compile Include="Config\config_public_charConfig.cs" />
     <Compile Include="Config\CarConfig.cs" />
     <Compile Include="Config\UserConfig.cs" />
     <Compile Include="Entity\Car.cs" />
+    <Compile Include="Entity\config_major.cs" />
+    <Compile Include="Entity\config_major_kind.cs" />
+    <Compile Include="Entity\config_public_char.cs" />
     <Compile Include="Entity\User.cs" />
     <Compile Include="MyContext\TestContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

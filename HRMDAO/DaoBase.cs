@@ -131,6 +131,9 @@ namespace HRMDAO
         /// </summary>
         /// <param name="where"></param>
         /// <returns></returns>
+        ///         
+       //按条件查询      //List<Student> list = db.SelectBy(e=>e.Name.Equals("乔配齐")); 用表达式方式写where条件
+
         public List<T> SelectByx(Expression<Func<T, bool>> where)
         {
 

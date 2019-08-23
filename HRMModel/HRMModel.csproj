@@ -41,6 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CarModel.cs" />
+    <Compile Include="config_majorModel.cs" />
+    <Compile Include="config_major_kindModel.cs" />
+    <Compile Include="config_public_charModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserModel.cs" />
   </ItemGroup>

@@ -16,7 +16,7 @@ namespace HRMUI
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Useres", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "config_major", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

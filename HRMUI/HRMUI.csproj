@@ -171,6 +171,9 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\config_majorController.cs" />
+    <Compile Include="Controllers\config_major_kindController.cs" />
+    <Compile Include="Controllers\config_public_charController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UseresController.cs" />
     <Compile Include="Global.asax.cs">
@@ -610,6 +613,7 @@
     <Content Include="javascript\tree\event.js" />
     <Content Include="javascript\tree\tree.css" />
     <Content Include="javascript\user_add.js" />
+    <Content Include="Scripts\vue.js" />
     <Content Include="javascript\winopen\winopen.js" />
     <Content Include="javascript\winopen\winopenm.js" />
     <Content Include="javascript\winopen\winopenn.js" />
@@ -778,6 +782,11 @@
     <Content Include="Unity.config" />
     <Content Include="Views\Useres\Index.cshtml" />
     <Content Include="Views\Useres\TestLogin.cshtml" />
+    <Content Include="Views\config_major_kind\Index.cshtml" />
+    <Content Include="Views\config_major_kind\Create.cshtml" />
+    <Content Include="Views\config_public_char\Index.cshtml" />
+    <Content Include="Views\config_major\Index.cshtml" />
+    <Content Include="Views\config_major\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

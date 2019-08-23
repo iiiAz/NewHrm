@@ -41,6 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ICarDAO.cs" />
+    <Compile Include="Iconfig_majorDAO.cs" />
+    <Compile Include="Iconfig_major_kindDAO.cs" />
+    <Compile Include="Iconfig_public_charDAO.cs" />
     <Compile Include="IUserDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
